@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+media/
+staticfiles/
+*.egg-info/
+dist/
+.venv/
+venv/
+node_modules/
+.coverage
+htmlcov/
