@@ -95,7 +95,7 @@ export default function Login() {
 
           <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
             {[
-              { num: '25+', label: 'Patients enrolled' },
+              { num: '25+', label: 'Users enrolled' },
               { num: '5', label: 'Health facilities' },
               { num: '131', label: 'Clinical encounters' },
             ].map((s, i) => (
@@ -113,7 +113,7 @@ export default function Login() {
         </div>
 
         <div style={{ position: 'relative', zIndex: 1, fontSize: 12, opacity: 0.6 }}>
-          Vitanode Health Technologies
+          TavekNode Technologies Ltd.
         </div>
       </div>
 

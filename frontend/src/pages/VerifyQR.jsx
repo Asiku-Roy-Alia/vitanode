@@ -35,9 +35,9 @@ export default function VerifyQR() {
   return (
     <div>
       <div style={{ marginBottom: 24 }}>
-        <h1>Verify Patient QR</h1>
+        <h1>Verify User QR</h1>
         <p style={{ color: 'var(--slate)', marginTop: 6, maxWidth: 700 }}>
-          Enter or paste the token from a patient's QR code to access their records. Every verification is logged in the immutable audit trail.
+          Enter or paste the token from a user's QR code to access their records. Every verification is logged in the immutable audit trail.
         </p>
       </div>
 
@@ -82,7 +82,7 @@ export default function VerifyQR() {
               <li>Only access records needed for clinical care</li>
               <li>Access expires automatically at the token TTL</li>
               <li>Your identity is logged for every view</li>
-              <li>Patients receive notification of all QR redemptions</li>
+              <li>Users receive notification of all QR redemptions</li>
             </ul>
           </div>
         </div>
@@ -98,9 +98,9 @@ export default function VerifyQR() {
           {!result ? (
             <div style={{ textAlign: 'center', color: 'var(--slate)' }}>
               <div style={{ fontSize: 80, marginBottom: 16, color: 'var(--border-dark)' }}>◈</div>
-              <h3 style={{ color: 'var(--slate)' }}>Patient record awaits</h3>
+              <h3 style={{ color: 'var(--slate)' }}>User record awaits</h3>
               <p style={{ fontSize: 13, marginTop: 8, maxWidth: 320 }}>
-                After verification, the patient's authorized data will appear here.
+                After verification, the user's authorized data will appear here.
               </p>
             </div>
           ) : (
@@ -143,7 +143,7 @@ export default function VerifyQR() {
               }}>
                 <strong style={{ color: 'var(--charcoal)' }}>Next step:</strong>
                 <p style={{ marginTop: 6, lineHeight: 1.6 }}>
-                  Visit the patient view in your provider portal to see their clinical records. 
+                  Visit the user view in your provider portal to see their clinical records. 
                   The consent has been logged in the audit trail.
                 </p>
               </div>

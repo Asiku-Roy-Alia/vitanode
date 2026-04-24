@@ -144,7 +144,7 @@ function UploadForm({ patient, onClose, onUploaded }) {
   async function handleSubmit(e) {
     e.preventDefault();
     if (!file) { setError('Please select a file.'); return; }
-    if (!patient?.uuid) { setError('Patient profile not loaded yet.'); return; }
+    if (!patient?.uuid) { setError('Profile not loaded yet.'); return; }
 
     setError('');
     setUploading(true);

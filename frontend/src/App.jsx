@@ -13,6 +13,7 @@ import ShareQR from './pages/ShareQR';
 import VerifyQR from './pages/VerifyQR';
 import Profile from './pages/Profile';
 import DataEntry from './pages/DataEntry';
+import UserAnalytics from './pages/UserAnalytics';
 import AdminPatients from './pages/AdminPatients';
 import AdminFacilities from './pages/AdminFacilities';
 
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/medications" element={<Medications />} />
         <Route path="/documents" element={<Documents />} />
         <Route path="/data-entry" element={<DataEntry />} />
+        <Route path="/analytics" element={<UserAnalytics />} />
         <Route path="/share" element={<ShareQR />} />
         <Route path="/verify" element={<VerifyQR />} />
         <Route path="/profile" element={<Profile />} />

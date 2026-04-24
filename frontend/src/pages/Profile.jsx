@@ -124,7 +124,7 @@ export default function Profile() {
 
       {patient && (
         <div className="card mb-3">
-          <h3 className="mb-2">Patient Profile</h3>
+          <h3 className="mb-2">Health Profile</h3>
           <div className="grid grid-3">
             <ReadOnlyField label="Patient UUID" value={patient.uuid} mono />
             <ReadOnlyField label="Date of Birth" value={patient.date_of_birth || 'Not set'} />

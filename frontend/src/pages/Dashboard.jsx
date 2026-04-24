@@ -247,9 +247,9 @@ function ProviderDashboard({ user }) {
         textAlign: 'center',
       }}>
         <div style={{ fontSize: 60, marginBottom: 16 }}>◈</div>
-        <h2 style={{ color: 'white', marginBottom: 8 }}>Verify a Patient QR Token</h2>
+        <h2 style={{ color: 'white', marginBottom: 8 }}>Verify a User QR Token</h2>
         <p style={{ opacity: 0.85, fontSize: 14, marginBottom: 24, maxWidth: 500, margin: '0 auto 24px' }}>
-          Enter the token from a patient's QR code to view their scoped records. All access is logged in the audit trail.
+          Enter the token from a user's QR code to view their scoped records. All access is logged in the audit trail.
         </p>
         <Link to="/verify" className="btn btn-gold btn-lg">
           Open QR Verifier →
@@ -258,7 +258,7 @@ function ProviderDashboard({ user }) {
 
       <div className="grid grid-3 mt-4">
         <InfoCard title="How it works" items={[
-          'Patient generates a QR code in their app',
+          'User generates a QR code in their app',
           'You scan or enter the token',
           'You get scoped, time-limited access',
           'Every view is logged for compliance',
@@ -269,10 +269,10 @@ function ProviderDashboard({ user }) {
           'Add clinical notes to encounters',
           'Update patient records you created',
         ]} />
-        <InfoCard title="Patient privacy" items={[
+        <InfoCard title="User privacy" items={[
           'You only see what the patient shares',
           'Access expires automatically',
-          'Patients can revoke at any time',
+          'Users can revoke at any time',
           'Full audit trail of every access',
         ]} />
       </div>
@@ -338,7 +338,7 @@ function AdminDashboard({ user }) {
       </div>
 
       <div className="grid grid-4 mb-4">
-        <StatCard icon="◐" value={stats.total_patients} label="Total Patients" />
+        <StatCard icon="◐" value={stats.total_patients} label="Total Users" />
         <StatCard icon="◑" value={stats.total_encounters} label="Total Encounters" />
         <StatCard icon="◒" value={stats.total_documents} label="Documents" />
         <StatCard icon="◈" value={stats.qr_shares_redeemed} label="QR Shares Used" />
@@ -348,7 +348,7 @@ function AdminDashboard({ user }) {
         <div className="card">
           <h3 className="mb-2">Last 30 Days</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <MetricRow label="New patient registrations" value={stats.patients_last_30_days} />
+            <MetricRow label="New user registrations" value={stats.patients_last_30_days} />
             <MetricRow label="New clinical encounters" value={stats.encounters_last_30_days} />
             <MetricRow label="QR codes generated" value={stats.qr_shares_generated} />
             <MetricRow label="QR codes redeemed by providers" value={stats.qr_shares_redeemed} />

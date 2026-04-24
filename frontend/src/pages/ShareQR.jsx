@@ -70,7 +70,7 @@ export default function ShareQR() {
   }
 
   async function handleGenerate() {
-    if (!patient?.uuid) { setError('Patient profile not loaded.'); return; }
+    if (!patient?.uuid) { setError('Profile not loaded.'); return; }
     if (scope.length === 0) { setError('Select at least one data category.'); return; }
 
     setError('');

@@ -65,7 +65,7 @@ export default function DataEntry() {
   }
 
   async function handleSave() {
-    if (!patient?.uuid) { setMessage('Patient profile not loaded.'); return; }
+    if (!patient?.uuid) { setMessage('Profile not loaded.'); return; }
 
     const filledFields = category.fields.filter(
       (f) => values[f.name] && values[f.name].toString().trim() !== ''
@@ -86,7 +86,7 @@ export default function DataEntry() {
         encounter_type: 'outpatient',
         status: 'finished',
         chief_complaint: `Self-reported ${category.title.toLowerCase()}`,
-        notes: `Patient self-reported data entry via Vitanode app.`,
+        notes: `Self-reported data entry via Vitanode app.`,
         start_time: now,
         end_time: now,
       });

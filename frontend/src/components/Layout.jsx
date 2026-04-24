@@ -12,20 +12,21 @@ export default function Layout() {
     { to: '/lab-results', label: 'Lab Results', icon: '◑' },
     { to: '/medications', label: 'Medications', icon: '◒' },
     { to: '/documents', label: 'Documents', icon: '◓' },
+    { to: '/analytics', label: 'Health Analytics', icon: '◔' },
     { to: '/share', label: 'Share with Provider', icon: '◈' },
     { to: '/profile', label: 'My Profile', icon: '◎' },
   ];
 
   const providerNav = [
     { to: '/', label: 'Dashboard', icon: '◉' },
-    { to: '/verify', label: 'Scan Patient QR', icon: '◈' },
-    { to: '/patients', label: 'My Patients', icon: '◐' },
+    { to: '/verify', label: 'Scan User QR', icon: '◈' },
+    { to: '/patients', label: 'My Users', icon: '◐' },
     { to: '/profile', label: 'My Profile', icon: '◎' },
   ];
 
   const adminNav = [
     { to: '/', label: 'Analytics', icon: '◉' },
-    { to: '/admin/patients', label: 'All Patients', icon: '◐' },
+    { to: '/admin/patients', label: 'All Users', icon: '◐' },
     { to: '/admin/facilities', label: 'Facilities', icon: '◑' },
     { to: '/profile', label: 'My Profile', icon: '◎' },
   ];

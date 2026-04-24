@@ -27,9 +27,9 @@ export default function AdminPatients() {
     <div>
       <div className="flex-between mb-3" style={{ flexWrap: 'wrap', gap: 12 }}>
         <div>
-          <h1>All Patients</h1>
+          <h1>All Users</h1>
           <p style={{ color: 'var(--slate)', marginTop: 6 }}>
-            {patients.length} patients registered across all facilities.
+            {patients.length} users registered across all facilities.
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function AdminPatients() {
 
       {filtered.length === 0 ? (
         <div className="card empty-state">
-          <h3 style={{ color: 'var(--slate)' }}>No patients match your search</h3>
+          <h3 style={{ color: 'var(--slate)' }}>No users match your search</h3>
         </div>
       ) : (
         <div className="card" style={{ padding: 0, overflow: 'hidden', borderRadius: 12 }}>
